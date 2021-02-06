@@ -1,1 +1,28 @@
 <p>Server component</p>
+<table class="table">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">ID</th>
+        <th scope="col">Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <th scope="row">1</th>
+        <td>{{ serverId }}</td>
+        <td [style]="statusColor">{{ getServerStatus() }}</td>
+        </tr>
+        <tr>
+        <th scope="row">2</th>
+        <td>{{ serverId }}</td>
+        <td [style]="statusColor">{{ getServerStatus() }}</td>
+        </tr>
+        <tr>
+        <th scope="row">3</th>
+        <td>{{ serverId }}</td>
+        <td [style]="statusColor">{{ getServerStatus() }}</td>
+        </tr>
+    </tbody>
+</table>
+<button class="btn btn-primary" [disabled]="!allowNewServer">Add new server</button>
